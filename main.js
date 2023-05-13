@@ -18,10 +18,10 @@ var current_image = viewer.scene.imageryLayers.addImageryProvider(imageProvider)
 
 // 東京都千代田区の建物データ（3D Tiles）
 var your_3d_tiles = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
-    url : 'https://plateau.geospatial.jp/main/data/3d-tiles/bldg/13100_tokyo/13101_chiyoda-ku/notexture/tileset.json'
+    url : 'https://tile.googleapis.com/v1/3dtiles/root.json?key=AIzaSyBHSq9D1mRjoxqGGdrGspYphB9o5Oky_D0'
 }));
 
 // カメラの初期位置の指定
 viewer.camera.setView({
-  destination : Cesium.Cartesian3.fromDegrees(139.76, 35.68, 5000.0)
+  destination : Cesium.Cartesian3.fromDegrees(138.2792, 35.2583, 2000.0)
 });
